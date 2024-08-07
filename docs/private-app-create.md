@@ -8,7 +8,7 @@ _Please note that HDR UK cannot create Private Apps on behalf of users._
 
 ### Step 1: Sign into the Gateway
 
-Sign in to the Gateway with your preferred login provider. Make sure you have a ‘team’ set up on the Gateway. If you are not a member of an existing ‘team’ you may need to ask a Team Admin to add you  to the team (see documentation [here](https://www.healthdatagateway.org/about/how-to-manage-teams-on-the-gateway) on how to manage ‘team’ on the Gateway). If you need assistance with this step, contact the HDR UK Technology Team using the link below. 
+Sign in to the Gateway with your preferred login provider. Make sure you have a ‘team’ set up on the Gateway. If you are not a member of an existing ‘team’ you may need to ask a Team Admin to add you  to the team (see documentation [here](https://www.healthdatagateway.org/en/support/team-management) on how to manage ‘team’ on the Gateway). If you need assistance with this step, contact the HDR UK Technology Team using the link below. 
 
 [https://hdruk.atlassian.net/servicedesk/customer/portal/7/group/14/create/29](https://hdruk.atlassian.net/servicedesk/customer/portal/7/group/14/create/29)
 
