@@ -1,13 +1,13 @@
 ## Introduction
 
-The Federated Metadata Automation (GMI) service enables data custodians to automate metadata transfer to the Gateway by configuring specific API endpoints. This technical guide provides instructions on how to set up and manage the GMI self-service on the Gateway. It also covers common pitfalls and error codes encountered during the integration testing process.
+The Gateway Metadata Integration (GMI) service enables data custodians to automate metadata transfer to the Gateway by configuring specific API endpoints. This technical guide provides instructions on how to set up and manage the GMI self-service on the Gateway. It also covers common pitfalls and error codes encountered during the integration testing process.
 
 ## How to set up a GMI process
 
-The following diagram (Fig 1) illustrates the steps involved in setting up a Federated Metadata Automation process on the Gateway:
+The following diagram (Fig 1) illustrates the steps involved in setting up a Gateway Metadata Integration process on the Gateway:
 
 ![image](https://github.com/HDRUK/gateway-2-integrations-testing/assets/69473770/e0f42677-7e97-4795-90c8-1a6f4c088a42)
-**Fig 1: Federated Metadata Automation process**
+**Fig 1: Gateway Metadata Integration process**
 
 ### Step 1: Sign in to the Gateway
 
