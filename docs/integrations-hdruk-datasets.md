@@ -1,13 +1,13 @@
 ## Introduction
 
-The Federated Metadata Automation (FMA) service enables data custodians to automate metadata transfer to the Gateway by configuring specific API endpoints. This technical guide provides instructions on how to set up and manage the FMA self-service on the Gateway. It also covers common pitfalls and error codes encountered during the integration testing process.
+The Gateway Metadata Integration (GMI) service enables data custodians to automate metadata transfer to the Gateway by configuring specific API endpoints. This technical guide provides instructions on how to set up and manage the GMI self-service on the Gateway. It also covers common pitfalls and error codes encountered during the integration testing process.
 
-## How to set up a FMA process
+## How to set up a GMI process
 
-The following diagram (Fig 1) illustrates the steps involved in setting up a Federated Metadata Automation process on the Gateway:
+The following diagram (Fig 1) illustrates the steps involved in setting up a Gateway Metadata Integration process on the Gateway:
 
 ![image](https://github.com/HDRUK/gateway-2-integrations-testing/assets/69473770/e0f42677-7e97-4795-90c8-1a6f4c088a42)
-**Fig 1: Federated Metadata Automation process**
+**Fig 1: Gateway Metadata Integration process**
 
 ### Step 1: Sign in to the Gateway
 
@@ -15,9 +15,9 @@ Sign in to the Gateway with your preferred route. Make sure you have a Team set 
 
 [https://www.healthdatagateway.org/about/contact-us](https://www.healthdatagateway.org/about/contact-us)
 
-### Step 2: Access to the Gateway FMA service
+### Step 2: Access to the Gateway GMI service
 
-The FMA service is designed to enable data custodians to maintain datasets and integration independently. If you have the necessary permissions (Team Admininistrator or Developer), you can access the service by following these steps:
+The GMI service is designed to enable data custodians to maintain datasets and integration independently. If you have the necessary permissions (Team Admininistrator or Developer), you can access the service by following these steps:
 
 -   Go to Team Management > Integrations > Integration.
 -   Click on “Create new Integration” to initiate the configuration (Fig 2).
@@ -62,11 +62,11 @@ If any of the above tests fail, an error message will be returned. If there are 
 ![image](https://github.com/HDRUK/gateway-2-integrations-testing/assets/69473770/c674ca37-0b66-4826-a538-2557595657bb)
 **Fig 4: Integration testing**
 
-If during normal operation the server changes or datasets are moved elsewhere, the integration may become invalid and FMA will disable it. In such cases, the synchronisation of datasets will cease, and you will receive a notification. To re-enable the integration, you will need to follow the configuration process again.
+If during normal operation the server changes or datasets are moved elsewhere, the integration may become invalid and GMI will disable it. In such cases, the synchronisation of datasets will cease, and you will receive a notification. To re-enable the integration, you will need to follow the configuration process again.
 
 #### Error Codes
 
-The FMA service utilises a list of error codes (Table 1). These error codes help in identifying and handling specific issues encountered during the integration testing process.
+The GMI service utilises a list of error codes (Table 1). These error codes help in identifying and handling specific issues encountered during the integration testing process.
 
 <center>
 

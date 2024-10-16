@@ -39,7 +39,7 @@ nav:
                   - Update: updating-a-dataset.md
                   - Delete: deleting-a-dataset.md
       - Using HDR UK Datasets Federation:
-            - Test Server Example: fma-test-server.md
+            - Test Server Example: gmi-test-server.md
 plugins:
       - search
 
