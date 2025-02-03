@@ -11,7 +11,7 @@ You can also test our APIs from the Swagger documentation in the link below.
 === "CURL"
 
     ``` bash
-    curl -X GET "https://api.healthdatagateway.org/api/v1/datasets" \
+    curl -X GET "https://api.healthdatagateway.org/api/v1/integrations/datasets" \
         --header "x-application-id: <YOUR_APP_ID >" \
         --header "x-client-id: <YOUR_CLIENT_ID>"
     ```
@@ -21,7 +21,7 @@ You can also test our APIs from the Swagger documentation in the link below.
     ``` python
     import requests
 
-    url = "https://api.healthdatagateway.org/api/v1/datasets"
+    url = "https://api.healthdatagateway.org/api/v1/integrations/datasets"
     headers = {
         "x-application-id": <YOUR_APP_ID>,
         "x-client-id": <YOUR_CLIENT_ID>
@@ -37,7 +37,7 @@ You can also test our APIs from the Swagger documentation in the link below.
     ``` js
     const axios - require('axios')
 
-    const url = ;
+    const url = "https://api.healthdatagateway.org/api/v1/integrations/datasets";
     const headers = {
         "x-application-id": <YOUR_APP_ID>,
         "x-client-id": <YOUR_CLIENT_ID>
@@ -64,7 +64,7 @@ You can also test our APIs from the Swagger documentation in the link below.
 
         curl = curl_easy_init();
         if(curl){
-            curl_easy_setopt(curl, CURLOPT_URL, "https://api.healthdatagateway.org/api/v1/datasets");
+            curl_easy_setopt(curl, CURLOPT_URL, "https://api.healthdatagateway.org/api/v1/integrations/datasets");
 
             struct curl_slist *headers = NULL;
             headers - curl_slist_append(headers, "x-application-id: <YOUR_APP_ID>");
@@ -93,7 +93,7 @@ You can also test our APIs from the Swagger documentation in the link below.
 
     func main(){
         client := &http.Client{}
-        req, err := http.NewRequest("GET", "https://api.healthdatagateway.org/api/v1/datasets", nil)
+        req, err := http.NewRequest("GET", "https://api.healthdatagateway.org/api/v1/integrations/datasets", nil)
         if err != nil {
             panic(err)
         }
