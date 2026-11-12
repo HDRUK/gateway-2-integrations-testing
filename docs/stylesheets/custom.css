@@ -6,6 +6,8 @@
     --md-typeset-a-color: #475da7;
 
     --md-footer-bg-color: #475da7;
+    --md-footer-bg-color--dark: #3a4e8e;
+    --md-accent-fg-color: #3db28c;
 }
 
 .md-button--primary {
@@ -33,7 +35,7 @@ h6 {
 }
 
 :root {
-    --md-admonition-icon--hdruk: url("/images/favicon.png");
+    --md-admonition-icon--hdruk: url("../images/favicon.png");
 }
 .md-typeset .admonition.hdruk,
 .md-typeset details.hdruk {
@@ -48,4 +50,14 @@ h6 {
     background-color: #475da7;
     -webkit-mask-image: var(--md-admonition-icon--hdruk);
     mask-image: var(--md-admonition-icon--hdruk);
+}
+
+.md-typeset .highlight span.filename {
+    background-color: #475da7;
+    color: white;
+}
+
+.md-typeset .grid.cards > ol > li,
+.md-typeset .grid.cards > ul > li {
+    border-top: 3px solid #3db28c;
 }

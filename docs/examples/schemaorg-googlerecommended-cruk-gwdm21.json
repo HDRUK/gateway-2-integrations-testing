@@ -1,0 +1,41 @@
+{
+  "status_code": 200,
+  "response": {
+    "@context": "https://schema.org/",
+    "@id": "https://hdruk.ac.uk",
+    "@type": "Dataset",
+    "identifier": "10.1500/data.45",
+    "version": "GDMv1",
+    "url": "https://hdruk.ac.uk/087654b3-2c0a-4b32-9c2e-1234567890ab",
+    "name": "Pancreatic Cancer Radiomics and Biomarker Cohort",
+    "alternateName": "Pancreatic Cancer Radiomics and Biomarker Cohort",
+    "description": "Other data types:\n- Abdominal CT Scans (application/dicom): 3D volumetric scans of the pancreas with tumors segmented",
+    "citation": "10.1500/data.45",
+    "creator": {
+      "@type": "Organization",
+      "legalName": "Oncology Research Trust",
+      "name": "Oncology Research Trust",
+      "email": "user@example.com",
+      "description": "",
+      "identifier": "",
+      "sameAs": null
+    },
+    "isAccessibleForFree": false,
+    "distribution": {
+      "@type": "DataDownload",
+      "name": "https://www.oncologytrust.org/data-access",
+      "contentUrl": "https://somehwere.com",
+      "encodingFormat": "Unknown"
+    },
+    "keywords": "Pancreatic;,;Cancer;,;Radiomics;,;Biomarkers;,;Response",
+    "license": "https://www.oncologytrust.org/terms",
+    "temporalCoverage": null,
+    "funder": null,
+    "isPartOf": null,
+    "hasPart": null,
+    "measurementTechnique": "",
+    "sameAs": null,
+    "spatialCoverage": "",
+    "variableMeasured": ""
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status_code": 400,
+  "response": {
+    "message": "Output metadata validation failed",
+    "details": [
+      {
+        "instancePath": "/description",
+        "schemaPath": "#/$defs/Text50/minLength",
+        "keyword": "minLength",
+        "params": {
+          "limit": 50
+        },
+        "message": "must NOT have fewer than 50 characters"
+      }
+    ]
+  }
+}

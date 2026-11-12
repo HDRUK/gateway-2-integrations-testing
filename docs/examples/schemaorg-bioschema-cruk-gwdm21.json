@@ -1,0 +1,7 @@
+{
+  "status_code": 500,
+  "response": {
+    "message": "Failed to execute translation between GWDM:2.0 and GWDM:1.2",
+    "details": {}
+  }
+}

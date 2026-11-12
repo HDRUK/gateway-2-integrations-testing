@@ -1,0 +1,211 @@
+{
+  "omics": null,
+  "linkage": {
+    "tools": null,
+    "dataUses": null,
+    "isReferenceIn": null,
+    "datasetLinkage": null,
+    "investigations": null,
+    "associatedMedia": null,
+    "isGeneratedUsing": null,
+    "syntheticDataWebLink": "null",
+    "publicationAboutDataset": null,
+    "publicationUsingDataset": null
+  },
+  "summary": {
+    "title": "Sussex Integrated Dataset - Primary Care Appointment",
+    "doiName": null,
+    "abstract": "Primary Care Appointment",
+    "keywords": "Primary Care;,;GP;,;General Practitioner;,;Appointments;,;Community Care;,;HDRUK",
+    "publisher": {
+      "name": "Sussex ICB",
+      "rorId": null,
+      "gatewayId": "89"
+    },
+    "inPipeline": "Not available",
+    "shortTitle": "Sussex Integrated Dataset - Primary Care Appointment",
+    "datasetType": "Health and disease",
+    "description": "This table records that activity has taken place between a patient and member of clinical staff working on behalf of a GP practice in an appointment 'slot', a pre-arranged opportunity in the rota for that clinician that was booked to be taken by this specific patient. GP practices sometimes use Clinic Lists that have slots but it is not possible to pre-book appointments into these slots, even though the clinical activity delivered in the time period may be exactly the same. Sometimes Clinic lists are retrospectively rearranged into appointments: e.g.when the GP has completed a ward round and only then knows who they have seen. This table also includes Did Not Attends (DNAs) which means that no patient contact took place.",
+    "contactPoint": "user@example.com",
+    "datasetSubType": null,
+    "populationSize": -1,
+    "controlledKeywords": null
+  },
+  "coverage": {
+    "pathway": null,
+    "spatial": "Sussex",
+    "followUp": "Unknown",
+    "typicalAgeRange": "0-120",
+    "datasetCompleteness": null
+  },
+  "required": {
+    "issued": "2026-07-23T00:10:03.000000Z",
+    "version": "1.0.4",
+    "modified": "2026-07-23T00:10:03.000000Z",
+    "gatewayId": "2233",
+    "revisions": [
+      {
+        "url": "https://web.dev.hdruk.cloud/dataset/2233?version=1.0.0",
+        "version": "1.0.0"
+      }
+    ],
+    "gatewayPid": "276ef9ca-4929-3ae8-0000-0000000064e6"
+  },
+  "provenance": {
+    "origin": {
+      "source": "EPR",
+      "purpose": "Care",
+      "imageContrast": "Not stated",
+      "collectionSituation": "Primary care - Clinic;,;Community"
+    },
+    "temporal": {
+      "endDate": null,
+      "timeLag": "Other",
+      "startDate": "2025-03-07",
+      "accrualPeriodicity": "Other",
+      "distributionReleaseDate": null
+    }
+  },
+  "observations": [
+    {
+      "observedNode": "Findings",
+      "measuredValue": 1,
+      "observationDate": "2025-03-07",
+      "measuredProperty": "Findings",
+      "disambiguatingDescription": null
+    }
+  ],
+  "accessibility": {
+    "usage": {
+      "resourceCreator": {
+        "name": "Our Care Connected, Sussex Integrated Dataset",
+        "rorId": null,
+        "gatewayId": null
+      },
+      "dataUseLimitation": "Research-specific restrictions",
+      "dataUseRequirement": "Ethics approval required;,;Geographical restrictions;,;Not for profit use;,;Project-specific restrictions;,;Time limit on use;,;User-specific restriction"
+    },
+    "access": {
+      "accessRights": "In Progress",
+      "jurisdiction": "null",
+      "accessService": null,
+      "dataProcessor": "Sussex Integrated Dataset",
+      "dataController": "Sussex ICB",
+      "deliveryLeadTime": "1-2 months",
+      "accessRequestCost": "To be agreed per project by SDE program",
+      "accessServiceCategory": "null"
+    },
+    "formatAndStandards": {
+      "formats": "Text",
+      "languages": "en",
+      "conformsTo": "NHS DATA DICTIONARY;,;LOCAL",
+      "vocabularyEncodingSchemes": "NHS NATIONAL CODES"
+    }
+  },
+  "structuralMetadata": [
+    {
+      "name": "Primary Care Appointment",
+      "columns": [
+        {
+          "name": "appt_date",
+          "values": null,
+          "dataType": "date",
+          "sensitive": false,
+          "description": "The arranged date for the appointment"
+        },
+        {
+          "name": "appt_id",
+          "values": null,
+          "dataType": "nvarchar",
+          "sensitive": false,
+          "description": "A unique code to identify a single appointment record."
+        },
+        {
+          "name": "appt_time",
+          "values": null,
+          "dataType": "time",
+          "sensitive": false,
+          "description": "The time at which the appointment was due to take place."
+        },
+        {
+          "name": "appt_type",
+          "values": null,
+          "dataType": "nvarchar",
+          "sensitive": false,
+          "description": "The type of appointment that was booked."
+        },
+        {
+          "name": "attendance_outcome",
+          "values": null,
+          "dataType": "nvarchar",
+          "sensitive": false,
+          "description": "a text description of the outcome of the appointment e.g. DNA, Cancelled by Patient, Finished"
+        },
+        {
+          "name": "clinician_seen",
+          "values": null,
+          "dataType": "nvarchar",
+          "sensitive": false,
+          "description": "A unique code for the staff member who was booked to engage with the patient during this appointment slot."
+        },
+        {
+          "name": "duration_actual",
+          "values": null,
+          "dataType": "int",
+          "sensitive": false,
+          "description": "The recorded duration of the appointment in minutes."
+        },
+        {
+          "name": "duration_expected",
+          "values": null,
+          "dataType": "int",
+          "sensitive": false,
+          "description": "The arranged duration of the appointment, in minutes"
+        },
+        {
+          "name": "process_datestamp",
+          "values": null,
+          "dataType": "datetime",
+          "sensitive": false,
+          "description": "date data processing into the SID"
+        },
+        {
+          "name": "raw_data_id",
+          "values": null,
+          "dataType": "int",
+          "sensitive": false,
+          "description": "The raw_data_id is important because it allows the user to link the data set in question back to information captured at time of processing e.g. data provider (CSU), data supplier (GP practice code), number of rows received"
+        },
+        {
+          "name": "session_category",
+          "values": null,
+          "dataType": "nvarchar",
+          "sensitive": false,
+          "description": "Text descriptions of the appointment session include Default Non-List Category, Nurse S/A AM, Nurse S/A PM, Extended Hours"
+        },
+        {
+          "name": "SID_id",
+          "values": null,
+          "dataType": "nvarchar",
+          "sensitive": false,
+          "description": "A unique code identifying a single patient."
+        }
+      ],
+      "description": "Primary Care Appointment table"
+    }
+  ],
+  "demographicFrequency": null,
+  "tissuesSampleCollection": [
+    {
+      "id": null,
+      "disease": null,
+      "materialType": "None/not available",
+      "collectionType": null,
+      "dataCategories": null,
+      "sampleAgeRange": null,
+      "accessConditions": null,
+      "storageTemperature": null,
+      "tissueSampleMetadata": null
+    }
+  ]
+}

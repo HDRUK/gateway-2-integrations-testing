@@ -1,0 +1,104 @@
+{
+  "omics": null,
+  "linkage": {
+    "tools": null,
+    "dataUses": null,
+    "isReferenceIn": null,
+    "datasetLinkage": {
+      "isPartOf": null,
+      "isMemberOf": null,
+      "isDerivedFrom": null,
+      "linkedDatasets": null
+    },
+    "investigations": null,
+    "associatedMedia": null,
+    "isGeneratedUsing": null,
+    "syntheticDataWebLink": null,
+    "publicationAboutDataset": null,
+    "publicationUsingDataset": null
+  },
+  "summary": {
+    "title": "ARIA Radonc",
+    "doiName": null,
+    "abstract": "A complete mirror of the radiotherapy prescribing system.",
+    "keywords": null,
+    "publisher": {
+      "name": "Oxford University Hospitals",
+      "gatewayId": "97568358-ae0f-44ac-bfd5-8351e11bab68"
+    },
+    "inPipeline": "Not available",
+    "shortTitle": "ARIA Radonc",
+    "datasetType": "Health and disease",
+    "description": null,
+    "contactPoint": "user@example.com",
+    "datasetSubType": "Not applicable",
+    "populationSize": -1,
+    "controlledKeywords": null
+  },
+  "coverage": {
+    "pathway": null,
+    "spatial": null,
+    "followUp": null,
+    "typicalAgeRange": null,
+    "datasetCompleteness": null
+  },
+  "required": {
+    "issued": "2024-10-08T11:30:43.290910Z",
+    "version": "0.0.1",
+    "modified": "2024-10-08T11:30:43.290923Z",
+    "gatewayId": "607",
+    "revisions": [
+      {
+        "url": "https://web.prod.hdruk.cloud//dataset/607?version=1.0.0",
+        "version": "1.0.0"
+      }
+    ],
+    "gatewayPid": "5032c0aa-c3db-431b-ad0c-1b484adf8cb0"
+  },
+  "provenance": {
+    "origin": {
+      "source": null,
+      "purpose": null,
+      "imageContrast": "Not stated",
+      "collectionSituation": null
+    },
+    "temporal": {
+      "endDate": null,
+      "timeLag": "Not applicable",
+      "startDate": "1970-01-01",
+      "accrualPeriodicity": null,
+      "distributionReleaseDate": null
+    }
+  },
+  "observations": [],
+  "accessibility": {
+    "usage": {
+      "resourceCreator": {
+        "name": null,
+        "rorId": null,
+        "gatewayId": null
+      },
+      "dataUseLimitation": null,
+      "dataUseRequirement": null
+    },
+    "access": {
+      "accessRights": "Available locally within Trust Clinical Data Warehouse System and authorised access by Trust staff only.",
+      "jurisdiction": null,
+      "accessService": null,
+      "dataProcessor": null,
+      "dataController": null,
+      "deliveryLeadTime": "Not applicable",
+      "accessRequestCost": null,
+      "accessServiceCategory": null
+    },
+    "formatAndStandards": {
+      "formats": null,
+      "languages": null,
+      "conformsTo": null,
+      "vocabularyEncodingSchemes": null
+    }
+  },
+  "structuralMetadata": [],
+  "demographicFrequency": null,
+  "tissuesSampleCollection": []
+}

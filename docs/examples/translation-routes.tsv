@@ -1,0 +1,13 @@
+from	to	hops	route
+GWDM:2.0	SchemaOrg:GoogleRecommended	1	GWDM:2.0 -> SchemaOrg:GoogleRecommended
+GWDM:2.0	SchemaOrg:default	3	GWDM:2.0 -> GWDM:1.2 -> GWDM:1.1 -> SchemaOrg:default
+GWDM:2.0	SchemaOrg:BioSchema	3	GWDM:2.0 -> GWDM:1.2 -> GWDM:1.1 -> SchemaOrg:BioSchema
+GWDM:2.1	SchemaOrg:GoogleRecommended	2	GWDM:2.1 -> GWDM:2.0 -> SchemaOrg:GoogleRecommended
+GWDM:2.1	SchemaOrg:default	4	GWDM:2.1 -> GWDM:2.0 -> GWDM:1.2 -> GWDM:1.1 -> SchemaOrg:default
+GWDM:2.1	SchemaOrg:BioSchema	4	GWDM:2.1 -> GWDM:2.0 -> GWDM:1.2 -> GWDM:1.1 -> SchemaOrg:BioSchema
+GWDM:2.0	HDRUK:4.0.0	1	GWDM:2.0 -> HDRUK:4.0.0
+GWDM:2.1	HDRUK:4.0.0	2	GWDM:2.1 -> GWDM:2.0 -> HDRUK:4.0.0
+HDRUK:4.0.0	GWDM:2.0	1	HDRUK:4.0.0 -> GWDM:2.0
+HDRUK:4.0.0	GWDM:2.1	2	HDRUK:4.0.0 -> GWDM:2.0 -> GWDM:2.1
+HDRUK:2.1.2	GWDM:2.0	3	HDRUK:2.1.2 -> GWDM:1.1 -> GWDM:1.2 -> GWDM:2.0
+SchemaOrg:default	GWDM:2.0	4	SchemaOrg:default -> GWDM:1.0 -> GWDM:1.1 -> GWDM:1.2 -> GWDM:2.0

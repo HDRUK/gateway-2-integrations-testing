@@ -1,2 +1,9 @@
 *__pycache__*
 .ipynb_checkpoints
+site/
+
+# Internal notes — tracks b) and c). Deliberately untracked: this repo is public
+# on GitHub, and these are target-state and research notes destined for
+# Confluence, not for publication. See plans/TRACKS.md and DECISIONS.md D18.
+internal-notes/
+plans/
