@@ -1,0 +1,240 @@
+{
+  "status_code": 200,
+  "response": {
+    "identifier": "276ef9ca-4929-3ae8-0000-0000000064e6",
+    "issued": "2026-07-23T00:10:03.000000Z",
+    "modified": "2026-07-23T00:10:03.000000Z",
+    "revisions": [
+      {
+        "url": "https://web.dev.hdruk.cloud/dataset/2233?version=1.0.0",
+        "version": "1.0.0"
+      }
+    ],
+    "version": "1.0.4",
+    "summary": {
+      "abstract": "Primary Care Appointment",
+      "contactPoint": "user@example.com",
+      "keywords": [
+        "Primary Care",
+        "GP",
+        "General Practitioner",
+        "Appointments",
+        "Community Care",
+        "HDRUK"
+      ],
+      "doiName": null,
+      "title": "Sussex Integrated Dataset - Primary Care Appointment",
+      "dataCustodian": {
+        "name": "Sussex ICB",
+        "identifier": "89",
+        "contactPoint": "user@example.com",
+        "logo": null,
+        "description": null,
+        "memberOf": null
+      },
+      "populationSize": -1,
+      "datasetAliases": null
+    },
+    "documentation": {
+      "description": "This table records that activity has taken place between a patient and member of clinical staff working on behalf of a GP practice in an appointment 'slot', a pre-arranged opportunity in the rota for that clinician that was booked to be taken by this specific patient. GP practices sometimes use Clinic Lists that have slots but it is not possible to pre-book appointments into these slots, even though the clinical activity delivered in the time period may be exactly the same. Sometimes Clinic lists are retrospectively rearranged into appointments: e.g.when the GP has completed a ward round and only then knows who they have seen. This table also includes Did Not Attends (DNAs) which means that no patient contact took place.",
+      "associatedMedia": null,
+      "inPipeline": "Not available"
+    },
+    "coverage": {
+      "pathway": null,
+      "spatial": "Sussex",
+      "followUp": "Unknown",
+      "datasetCompleteness": null,
+      "typicalAgeRangeMin": 0,
+      "typicalAgeRangeMax": 120,
+      "materialType": [
+        "None/not available"
+      ]
+    },
+    "provenance": {
+      "origin": {
+        "purpose": [
+          "Care"
+        ],
+        "source": [
+          "EPR"
+        ],
+        "collectionSource": [
+          "Primary care - Clinic",
+          "Community"
+        ],
+        "datasetType": [
+          {
+            "name": "Health and disease",
+            "subTypes": []
+          }
+        ],
+        "imageContrast": "Not stated"
+      },
+      "temporal": {
+        "endDate": null,
+        "startDate": "2025-03-07",
+        "timeLag": "Other",
+        "publishingFrequency": "Other",
+        "distributionReleaseDate": null
+      }
+    },
+    "accessibility": {
+      "usage": {
+        "resourceCreator": "Our Care Connected, Sussex Integrated Dataset",
+        "dataUseLimitation": [
+          "Research-specific restrictions"
+        ],
+        "dataUseRequirements": [
+          "Ethics approval required",
+          "Geographical restrictions",
+          "Not for profit use",
+          "Project-specific restrictions",
+          "Time limit on use",
+          "User-specific restriction"
+        ]
+      },
+      "access": {
+        "accessRights": "In Progress",
+        "jurisdiction": [],
+        "accessService": null,
+        "dataProcessor": "Sussex Integrated Dataset",
+        "dataController": "Sussex ICB",
+        "deliveryLeadTime": "1-2 months",
+        "accessRequestCost": "To be agreed per project by SDE program",
+        "accessServiceCategory": null
+      },
+      "formatAndStandards": {
+        "conformsTo": [
+          "NHS DATA DICTIONARY",
+          "LOCAL"
+        ],
+        "vocabularyEncodingScheme": [
+          "NHS NATIONAL CODES"
+        ],
+        "language": [
+          "en"
+        ],
+        "format": [
+          "Text"
+        ]
+      }
+    },
+    "enrichmentAndLinkage": {
+      "tools": [],
+      "investigations": [],
+      "publicationAboutDataset": null,
+      "publicationUsingDataset": null,
+      "derivedFrom": null,
+      "isPartOf": null,
+      "linkableDatasets": null,
+      "similarToDatasets": null
+    },
+    "observations": [
+      {
+        "observedNode": "Findings",
+        "measuredValue": 1,
+        "observationDate": "2025-03-07",
+        "measuredProperty": "Findings",
+        "disambiguatingDescription": null
+      }
+    ],
+    "structuralMetadata": {
+      "tables": [
+        {
+          "name": "Primary Care Appointment",
+          "columns": [
+            {
+              "name": "appt_date",
+              "values": null,
+              "dataType": "date",
+              "sensitive": false,
+              "description": "The arranged date for the appointment"
+            },
+            {
+              "name": "appt_id",
+              "values": null,
+              "dataType": "nvarchar",
+              "sensitive": false,
+              "description": "A unique code to identify a single appointment record."
+            },
+            {
+              "name": "appt_time",
+              "values": null,
+              "dataType": "time",
+              "sensitive": false,
+              "description": "The time at which the appointment was due to take place."
+            },
+            {
+              "name": "appt_type",
+              "values": null,
+              "dataType": "nvarchar",
+              "sensitive": false,
+              "description": "The type of appointment that was booked."
+            },
+            {
+              "name": "attendance_outcome",
+              "values": null,
+              "dataType": "nvarchar",
+              "sensitive": false,
+              "description": "a text description of the outcome of the appointment e.g. DNA, Cancelled by Patient, Finished"
+            },
+            {
+              "name": "clinician_seen",
+              "values": null,
+              "dataType": "nvarchar",
+              "sensitive": false,
+              "description": "A unique code for the staff member who was booked to engage with the patient during this appointment slot."
+            },
+            {
+              "name": "duration_actual",
+              "values": null,
+              "dataType": "int",
+              "sensitive": false,
+              "description": "The recorded duration of the appointment in minutes."
+            },
+            {
+              "name": "duration_expected",
+              "values": null,
+              "dataType": "int",
+              "sensitive": false,
+              "description": "The arranged duration of the appointment, in minutes"
+            },
+            {
+              "name": "process_datestamp",
+              "values": null,
+              "dataType": "datetime",
+              "sensitive": false,
+              "description": "date data processing into the SID"
+            },
+            {
+              "name": "raw_data_id",
+              "values": null,
+              "dataType": "int",
+              "sensitive": false,
+              "description": "The raw_data_id is important because it allows the user to link the data set in question back to information captured at time of processing e.g. data provider (CSU), data supplier (GP practice code), number of rows received"
+            },
+            {
+              "name": "session_category",
+              "values": null,
+              "dataType": "nvarchar",
+              "sensitive": false,
+              "description": "Text descriptions of the appointment session include Default Non-List Category, Nurse S/A AM, Nurse S/A PM, Extended Hours"
+            },
+            {
+              "name": "SID_id",
+              "values": null,
+              "dataType": "nvarchar",
+              "sensitive": false,
+              "description": "A unique code identifying a single patient."
+            }
+          ],
+          "description": "Primary Care Appointment table"
+        }
+      ],
+      "syntheticDataWebLink": []
+    },
+    "demographicFrequency": null,
+    "omics": null
+  }
+}

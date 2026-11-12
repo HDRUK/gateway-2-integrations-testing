@@ -1,0 +1,153 @@
+path	type	required	enum	description
+accessibility	Accessibility	yes		UNVERIFIED (inherited from GWDM 2.0) Accessibility information allows researchers to understand access, usage, limitations, formats, standards and linkage or interoperability with toolsets.
+accessibility.access	Access	yes		UNVERIFIED (inherited from GWDM 2.0) This section includes information about data access
+accessibility.access.accessRequestCost	LongDescription|null			UNVERIFIED (inherited from GWDM 2.0) Please provide link(s) to a webpage detailing the commercial model for processing data access requests for the organisation (if available) Definition: Indication of commercial model or cost (in GBP) for processing each data access request by the data custodian.
+accessibility.access.accessRights	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Please provide details for the data access rights
+accessibility.access.accessService	LongDescription|null			UNVERIFIED (inherited from GWDM 2.0) Please provide a brief description of the data access services that are available including: environment that is currently available to researchers;additional consultancy and services;any indication of costs associated. If no environment is currently available, please indicate the current plans and timelines when and how data will be made available to researchers Note: This value will be used as default access environment for all datasets submitted by the organisation. However, there will be the opportunity to overwrite this value for each dataset.
+accessibility.access.accessServiceCategory	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Where access to data come from: TRE/SED, direct access, open acccess, varies based on project.
+accessibility.access.dataController	LongDescription|null			UNVERIFIED (inherited from GWDM 2.0) Data Controller means a person/entity who (either alone or jointly or in common with other persons/entities) determines the purposes for which and the way any Data Subject data, specifically personal data or are to be processed.
+accessibility.access.dataProcessor	LongDescription|null			UNVERIFIED (inherited from GWDM 2.0) A Data Processor, in relation to any Data Subject data, specifically personal data, means any person/entity (other than an employee of the data controller) who processes the data on behalf of the data controller.
+accessibility.access.deliveryLeadTime	DeliveryLeadTimeV2|null		Less than 1 week, 1-2 weeks, 2-4 weeks, 1-2 months, 2-6 months, More than 6 months, Variable, Not applicable, Other	UNVERIFIED (inherited from GWDM 2.0) Please provide an indication of the typical processing times based on the types of requests typically received.
+accessibility.access.jurisdiction	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Please use country code from ISO 3166-1 country codes and the associated ISO 3166-2 for regions, cities, states etc. for the country/state under whose laws the data subjects' data is collected, processed and stored.
+accessibility.formatAndStandards	FormatAndStandards|null			UNVERIFIED (inherited from GWDM 2.0) Section includes technical attributes for language vocabularies, sizes etc. and gives researchers facts about and processing the underlying data in the dataset.
+accessibility.formatAndStandards.conformsTo	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) What the vocabulary conforms to.
+accessibility.formatAndStandards.formats	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Format(s) the dataset can be made available in
+accessibility.formatAndStandards.languages	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Language code(s) of the language of the dataset metadata and underlying data is made available.
+accessibility.formatAndStandards.vocabularyEncodingSchemes	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Code value of the ontology vocabulary encoding
+accessibility.usage	Usage|null			UNVERIFIED (inherited from GWDM 2.0) This section includes information about how the data can be used and how it is currently being used
+accessibility.usage.dataUseLimitation	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Please provide an indication of consent permissions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. NOTE: we have extended the DUO to include a value for NO LINKAGE
+accessibility.usage.dataUsePermissions	object|null			UNVERIFIED - map emits a nested object carrying patientRecontact only
+accessibility.usage.dataUsePermissions.patientRecontact	unknown			UNVERIFIED - passed through unchanged from HDRUK 4.1.0
+accessibility.usage.dataUseRequirement	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Please indicate fit here are any additional conditions set for use if any, multiple requirements may be provided. Please ensure that these restrictions are documented in access rights information.
+accessibility.usage.duoCodes	string|null			UNVERIFIED - map emits a ';,;'-joined string; the 2.2 schema may model it as a list
+accessibility.usage.resourceCreator	Organisation|null			UNVERIFIED (inherited from GWDM 2.0) Please provide the text that you would like included as part of any citation that credits this dataset. This is typically just the name of the publisher.   No employee details should be provided.'
+accessibility.usage.resourceCreator.gatewayId	string|null			UNVERIFIED (inherited from GWDM 2.0) Identifier on the gateway
+accessibility.usage.resourceCreator.name	Name|null			UNVERIFIED (inherited from GWDM 2.0) Name of the organisation
+accessibility.usage.resourceCreator.rorId	string|null			UNVERIFIED (inherited from GWDM 2.0) The Research Organization Registry (ROR) for the organisation, if applicable
+coverage	Coverage|null			UNVERIFIED (inherited from GWDM 2.0) This information includes attributes for geographical and temporal coverage, cohort details etc. to enable a deeper understanding of the dataset content so that researchers can make decisions about the relevance of the underlying data.
+coverage.datasetCompleteness	Url|null			UNVERIFIED (inherited from GWDM 2.0) The URL where a Researcher can learn more about the completeness of the dataset.
+coverage.followUp	FollowupV2|null		0 - 6 Months, 6 - 12 Months, 1 - 10 Years, > 10 Years, Unknown, Continuous, Other, null	UNVERIFIED (inherited from GWDM 2.0) If known, what is the typical time span that a patient appears in the dataset (follow up period)
+coverage.pathway	LongDescription|null			UNVERIFIED (inherited from GWDM 2.0) Please indicate if the dataset is representative of the patient pathway and any limitations the dataset may have with respect to pathway coverage. This could include if the dataset is from a single speciality or area, a single tier of care, linked across two tiers (e.g. primary and secondary care), or an integrated care record covering the whole patient pathway.
+coverage.spatial	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) The geographical area covered by the dataset. It is recommended that links are to entries in a well-maintained gazetteer such as https://www.geonames.org/ or https://what3words.com/daring.lion.race.
+coverage.typicalAgeRange	AgeRange|null			UNVERIFIED (inherited from GWDM 2.0) Please indicate the age range in whole years of participants in the dataset. Please provide range in the following format '[min age] – [max age]' where both the minimum and maximum are whole numbers (integers).
+demographicFrequency	DemographicFrequency|null			UNVERIFIED (inherited from GWDM 2.0) An object containing demographic frequency data categorised by age, ethnicity, and disease attributes.
+demographicFrequency.age	array|null			UNVERIFIED (inherited from GWDM 2.0) Array of age bins and their corresponding counts.
+demographicFrequency.age[].bin	AgeEnum	yes		UNVERIFIED (inherited from GWDM 2.0)
+demographicFrequency.age[].count	integer	yes		UNVERIFIED (inherited from GWDM 2.0)
+demographicFrequency.disease	array|null			UNVERIFIED (inherited from GWDM 2.0) Array of diseases and their corresponding counts.
+demographicFrequency.disease[].count	integer	yes		UNVERIFIED (inherited from GWDM 2.0)
+demographicFrequency.disease[].diseaseCode	string|integer	yes		UNVERIFIED (inherited from GWDM 2.0)
+demographicFrequency.disease[].diseaseCodeVocabulary	DiseaseCodeEnum	yes		UNVERIFIED (inherited from GWDM 2.0)
+demographicFrequency.ethnicity	array|null			UNVERIFIED (inherited from GWDM 2.0) Array of ethnicity bins and their corresponding counts.
+demographicFrequency.ethnicity[].bin	EthnicityEnum	yes		UNVERIFIED (inherited from GWDM 2.0)
+demographicFrequency.ethnicity[].count	integer	yes		UNVERIFIED (inherited from GWDM 2.0)
+linkage	Linkage|null			UNVERIFIED (inherited from GWDM 2.0) Metadata for various linkages with datasets and other gateway entities
+linkage.associatedMedia	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Any media associated with the Gateway Organisation using a valid URI for the content. This is an opportunity to provide additional context that could be useful for researchers wanting to understand more about the dataset and its relevance to their research question
+linkage.dataUses	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) ??
+linkage.datasetLinkage	DatasetLinkage|null			UNVERIFIED (inherited from GWDM 2.0) Dataset Linkage copied over from
+linkage.datasetLinkage.isDerivedFrom	array|null			UNVERIFIED (inherited from GWDM 2.0) Indicate if derived datasets or predefined extracts are available and the type of derivation available. Notes. Single or multiple dimensions can be provided as a derived extract alongside the dataset
+linkage.datasetLinkage.isDerivedFrom[].pid	OneHundredFiftyCharacters|null			UNVERIFIED (inherited from GWDM 2.0)
+linkage.datasetLinkage.isDerivedFrom[].title	OneHundredFiftyCharacters|null			UNVERIFIED (inherited from GWDM 2.0)
+linkage.datasetLinkage.isDerivedFrom[].url	Url|null			UNVERIFIED (inherited from GWDM 2.0)
+linkage.datasetLinkage.isMemberOf	array|null			UNVERIFIED (inherited from GWDM 2.0) Dataset is a member of XXX(?)
+linkage.datasetLinkage.isMemberOf[].pid	OneHundredFiftyCharacters|null			UNVERIFIED (inherited from GWDM 2.0)
+linkage.datasetLinkage.isMemberOf[].title	OneHundredFiftyCharacters|null			UNVERIFIED (inherited from GWDM 2.0)
+linkage.datasetLinkage.isMemberOf[].url	Url|null			UNVERIFIED (inherited from GWDM 2.0)
+linkage.datasetLinkage.isPartOf	array|null			UNVERIFIED (inherited from GWDM 2.0) If the dataset is part of a group or family
+linkage.datasetLinkage.isPartOf[].pid	OneHundredFiftyCharacters|null			UNVERIFIED (inherited from GWDM 2.0)
+linkage.datasetLinkage.isPartOf[].title	OneHundredFiftyCharacters|null			UNVERIFIED (inherited from GWDM 2.0)
+linkage.datasetLinkage.isPartOf[].url	Url|null			UNVERIFIED (inherited from GWDM 2.0)
+linkage.datasetLinkage.linkedDatasets	array|null			UNVERIFIED (inherited from GWDM 2.0) Links to other datasets.
+linkage.datasetLinkage.linkedDatasets[].pid	OneHundredFiftyCharacters|null			UNVERIFIED (inherited from GWDM 2.0)
+linkage.datasetLinkage.linkedDatasets[].title	OneHundredFiftyCharacters|null			UNVERIFIED (inherited from GWDM 2.0)
+linkage.datasetLinkage.linkedDatasets[].url	Url|null			UNVERIFIED (inherited from GWDM 2.0)
+linkage.investigations	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Please provide the keystone paper associated with the dataset.
+linkage.isGeneratedUsing	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) ??
+linkage.isReferenceIn	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) The keystone paper associated with the dataset. Also include a list of known citations, if available and should be links to existing resources where the dataset has been used or referenced.',
+linkage.publicationAboutDataset	array|null			UNVERIFIED (inherited from GWDM 2.0) DOIs for publications which describe the dataset.
+linkage.publicationUsingDataset	array|null			UNVERIFIED (inherited from GWDM 2.0) DOIs for publications which use the dataset for analysis.
+linkage.syntheticDataWebLink	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Links to locations of information and or raw downloads of synthetic data associated with this dataset
+linkage.tools	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) URL of any analysis tools or models that have been created for this dataset and are available for further use
+observations	array|null			"UNVERIFIED (inherited from GWDM 2.0) Multiple observations about the dataset may be provided and users are expected to provide at least one observation  (1..*). We will be supporting the schema.org observation model (https://schema.org/Observation) with default values. Users will be encouraged to provide their own statistical populations as the project progresses.  Example:        &lt;b&gt; Statistical Population 1        &lt;/b&gt; type: StatisticalPopulation populationType: Persons numConstraints: 0        &lt;b&gt; Statistical Population 2 &lt;/b&gt; type: StatisticalPopulation populationType: Events numConstraints: 0 &lt;b&gt; Statistical Population 3 &lt;/b&gt; type: StatisticalPopulation populationType: Findings numConstraints: 0 typeOf: Observation observedNode: &lt;b&gt; Statistical Population 1 &lt;/b&gt; measuredProperty: count measuredValue: 32937 observationDate: “2017”"""
+observations[].disambiguatingDescription	AbstractText|null			UNVERIFIED (inherited from GWDM 2.0) If SNOMED CT term does not provide sufficient detail, please provide a description that disambiguates the population type.
+observations[].measuredProperty	MeasuredProperty	yes		"UNVERIFIED (inherited from GWDM 2.0) Initially this will be defaulted to ""COUNT"""
+observations[].measuredValue	integer	yes		UNVERIFIED (inherited from GWDM 2.0) Please provide the population size associated with the population type the dataset i.e. 1000 people in a study, or 87 images (MRI) of Knee Usage Note: Used with Statistical Population, which specifies the type of the population in the dataset.
+observations[].observationDate	string|string	yes		UNVERIFIED (inherited from GWDM 2.0) Please provide the date that the observation was made. Some datasets may be continuously updated and the number of records will change regularly, so the observation date provides users with the date that the analysis or query was run to generate the particular observation. Multiple observations can be made i.e. an observation of cumulative COVID positive cases by specimen on the 1/1/2021 could be 2M. On the 8/1/2021 a new observation could be 2.1M. Users can add multiple observations.
+observations[].observedNode	StatisticalPopulationConstrainedV2	yes		UNVERIFIED (inherited from GWDM 2.0) Please select one of the following statistical populations for you observation
+omics	Omics|null			UNVERIFIED (inherited from GWDM 2.0) Omics
+omics.assay	Assay|null		NMR spectroscopy, Mass-spectrometry, Whole genome sequencing, Exome sequencing, Genotyping by array, Transcriptome profiling by high-throughput sequencing, Transcriptome profiling by array, Amplicon sequencing, Methylation binding domain sequencing, Methylation profiling by high-throughput sequencing, Genomic variant calling, Chromatin accessibility profiling by high-throughput sequencing, Histone modification profiling by high-throughput sequencing, Chromatin immunoprecipitation sequencing, Whole genome shotgun sequencing, Whole transcriptome sequencing, Targeted mutation analysis	UNVERIFIED (inherited from GWDM 2.0) The specific 'omics assay that generated the dataset.
+omics.platform	Platform|null		Other, NMR Nightingale, Metabolon, Biocrates, Illumina, Oxford Nanopore, 454, Hi-C, HiFi	UNVERIFIED (inherited from GWDM 2.0) The specific technology or infrastructure used to perform the assay. If the omics platform used to create your dataset is not listed, please select other, a member of the gateway team will contact you to add an appropriate term(s) both to your record and to the metadata schema on your behalf.
+provenance	Provenance|null			UNVERIFIED (inherited from GWDM 2.0) Provenance information allows researchers to understand data within the context of its origins and can be an indicator of quality, authenticity and timeliness.
+provenance.origin	Origin|null			UNVERIFIED (inherited from GWDM 2.0)
+provenance.origin.collectionSituation	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Please indicate the setting(s) where data was collected. Multiple settings may be provided
+provenance.origin.imageContrast	Ternary|null		Yes, No, Not stated	UNVERIFIED (inherited from GWDM 2.0) Indicate whether usage of imaging contrast is captured within the dataset.
+provenance.origin.purpose	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Please indicate the purpose(s) that the dataset was collected.
+provenance.origin.source	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Please indicate the source of the data extraction
+provenance.temporal	object	yes		UNVERIFIED (inherited from GWDM 2.0)
+provenance.temporal.accrualPeriodicity	PeriodicityV2	yes		UNVERIFIED (inherited from GWDM 2.0) Please indicate the frequency of distribution release. If a dataset is distributed regularly please choose a distribution release periodicity from the constrained list and indicate the next release date. When the release date becomes historical, a new release date will be calculated based on the publishing periodicity. If a dataset has been published and will remain static please indicate that it is static and indicated when it was released. If a dataset is released on an irregular basis or “on-demand” please indicate that it is Irregular and leave release date as null. If a dataset can be published in real-time or near-real-time please indicate that it is continuous and leave release date as null. Notes: see https://www.dublincore.org/specifications/dublin-core/collection-description/frequency/
+provenance.temporal.distributionReleaseDate	string|string|null			UNVERIFIED (inherited from GWDM 2.0) Date of the latest release of the dataset. If this is a regular release i.e. quarterly, or this is a static dataset please complete this alongside Periodicity. If this is Irregular or Continuously released please leave this blank. Notes: Periodicity and release date will be used to determine when the next release is expected. E.g. if the release date is documented as 01/01/2020 and it is now 20/04/2020 and there is a quarterly release schedule, the latest release will be calculated as 01/04/2020.
+provenance.temporal.endDate	string|string|null			UNVERIFIED (inherited from GWDM 2.0) The end of the time period that the dataset provides coverage for. If the dataset is “Continuous” and has no known end date, please state continuous. If there are multiple cohorts in the dataset with varying end dates, please provide the latest date and use the description or the media attribute to provide more information.'
+provenance.temporal.startDate	string|string|null			UNVERIFIED (inherited from GWDM 2.0) The start of the time period that the dataset provides coverage for. If there are multiple cohorts in the dataset with varying start dates, please provide the earliest date and use the description or the media attribute to provide more information.
+provenance.temporal.timeLag	TimeLagV2	yes		UNVERIFIED (inherited from GWDM 2.0) Please indicate the typical time-lag between an event and the data for that event appearing in the dataset
+required	Required	yes		UNVERIFIED (inherited from GWDM 2.0) Required metadata needed for the GWDM
+required.gatewayId	string	yes		UNVERIFIED (inherited from GWDM 2.0) Associated identifier (number) that is the BigInt key in our SQL database for the dataset version associated with this metadata
+required.gatewayPid	string	yes		UNVERIFIED (inherited from GWDM 2.0) A unique persistent identifier for the metadata version. This is a 128-bit unique identifiers, as 32 hexadecimal digits separated by hyphens
+required.issued	string	yes		UNVERIFIED (inherited from GWDM 2.0) Datetime stamp of when this metadata version was initially issued
+required.modified	string	yes		UNVERIFIED (inherited from GWDM 2.0) Datetime stamp of when this metadata was last modified
+required.revisions	array	yes		UNVERIFIED (inherited from GWDM 2.0) A list of persistent identifiers and version numbers for previous versions of metadata for this dataset
+required.revisions[].url	Url|null	yes		UNVERIFIED (inherited from GWDM 2.0) Some url with a reference to the record of a previous version of this dataset
+required.revisions[].version	string	yes		UNVERIFIED (inherited from GWDM 2.0) Version number used for previous version of this dataset
+required.version	string	yes		UNVERIFIED (inherited from GWDM 2.0) Dataset metadata version
+structuralMetadata	array|null			UNVERIFIED (inherited from GWDM 2.0) Descriptions of all tables and data elements that can be included in the dataset
+structuralMetadata[].columns	array	yes		UNVERIFIED (inherited from GWDM 2.0) A list of columns contained within a table in a dataset.
+structuralMetadata[].columns[].dataType	string	yes		UNVERIFIED (inherited from GWDM 2.0) The name of a column in a table.
+structuralMetadata[].columns[].description	string|null			UNVERIFIED (inherited from GWDM 2.0) A description of a column in a table.
+structuralMetadata[].columns[].name	Name	yes		UNVERIFIED (inherited from GWDM 2.0) The name of a column in a table.
+structuralMetadata[].columns[].sensitive	boolean	yes		UNVERIFIED (inherited from GWDM 2.0) A True or False value, indicating if the field is sensitive or not
+structuralMetadata[].columns[].values	array|null			UNVERIFIED (inherited from GWDM 2.0) values in a dataset
+structuralMetadata[].columns[].values[].description	string|null			UNVERIFIED (inherited from GWDM 2.0) A description of a unique value in a column.
+structuralMetadata[].columns[].values[].frequency	integer|null			UNVERIFIED (inherited from GWDM 2.0) The frequency of occurrance of a value in a column
+structuralMetadata[].columns[].values[].name	Name	yes		UNVERIFIED (inherited from GWDM 2.0) Unique value in a column .
+structuralMetadata[].description	string|null			UNVERIFIED (inherited from GWDM 2.0) A description of a table in a dataset.
+structuralMetadata[].name	string|null			UNVERIFIED (inherited from GWDM 2.0) The name of a table in a dataset.
+summary	Summary	yes		UNVERIFIED (inherited from GWDM 2.0) Summary of metadata describing key pieces of information.
+summary.abstract	LongAbstractText	yes		UNVERIFIED (inherited from GWDM 2.0) Longer abstract detailing the dataset.
+summary.contactPoint	string|null			UNVERIFIED (inherited from GWDM 2.0) email of a person who can be the main contact point of this dataset
+summary.controlledKeywords	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Keywords that have been filtered and limited
+summary.datasetSubType	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Placeholder for dataset sub-type
+summary.datasetType	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) What type of dataset is this?
+summary.description	LongDescription|null			UNVERIFIED (inherited from GWDM 2.0) Longer description of the dataset in detail
+summary.doiName	Doi|null			UNVERIFIED (inherited from GWDM 2.0) DOI associated to this dataset
+summary.inPipeline	Pipeline|null		Available, Not available	UNVERIFIED (inherited from GWDM 2.0) Indicate whether this dataset is currently available for Researchers to request access.
+summary.keywords	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Comma separated key words associated to this dataset.
+summary.populationSize	integer|null			UNVERIFIED (inherited from GWDM 2.0) Summary population size of the cohort
+summary.publisher	Organisation|null			UNVERIFIED (inherited from GWDM 2.0) Link to details about the publisher of this dataset
+summary.publisher.gatewayId	string|null			UNVERIFIED (inherited from GWDM 2.0) Identifier on the gateway
+summary.publisher.name	Name|null			UNVERIFIED (inherited from GWDM 2.0) Name of the organisation
+summary.publisher.rorId	string|null			UNVERIFIED (inherited from GWDM 2.0) The Research Organization Registry (ROR) for the organisation, if applicable
+summary.shortTitle	ShortTitle|null			UNVERIFIED (inherited from GWDM 2.0) A shorter descriptive title of the dataset
+summary.title	TwoHundredFiftyFiveCharacters	yes		UNVERIFIED (inherited from GWDM 2.0) The main title of the dataset
+tissuesSampleCollection	array|null			UNVERIFIED (inherited from GWDM 2.0) metedata for tissue samples
+tissuesSampleCollection[].accessConditions	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Access conditions for the tissue sample collection
+tissuesSampleCollection[].collectionType	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) The type of the sample collection. Can be several values [MIABIS-2.0-16](https://github.com/BBMRI-ERIC/miabis/blob/master/Structured-data-and-lists.md#collection-type)
+tissuesSampleCollection[].dataCategories	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) The type of data that is associated with the samples in the study. Can be several values MIABIS-2.0-13
+tissuesSampleCollection[].disease	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Disease associated with the tissue sample collection
+tissuesSampleCollection[].id	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) ID of the tissue sample collection
+tissuesSampleCollection[].materialType	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) The biospecimen saved from a biological entity for propagation e.g. testing, diagnostics, treatment or research purposes. Can be several values MIABIS-2.0-14
+tissuesSampleCollection[].sampleAgeRange	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Age range of the tissue sample collection
+tissuesSampleCollection[].storageTemperature	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Storage temperature of the tissue sample collection
+tissuesSampleCollection[].tissueSampleMetadata	TissueSampleMetadata|null			UNVERIFIED (inherited from GWDM 2.0) Metadata related to the tissue sample
+tissuesSampleCollection[].tissueSampleMetadata.anatomicalSiteFreeText	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Free text describing the anatomical site
+tissuesSampleCollection[].tissueSampleMetadata.anatomicalSiteOntologyCode	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Ontology code for the anatomical site, this code must match an ICD-0-3 format
+tissuesSampleCollection[].tissueSampleMetadata.anatomicalSiteOntologyDescription	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Ontology description for the anatomical site
+tissuesSampleCollection[].tissueSampleMetadata.creationDate	string|string|null			UNVERIFIED (inherited from GWDM 2.0) Date when the tissue sample metadata was created
+tissuesSampleCollection[].tissueSampleMetadata.id	string|null			UNVERIFIED (inherited from GWDM 2.0) ID of the tissue sample metadata
+tissuesSampleCollection[].tissueSampleMetadata.sampleContentDiagnosis	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Diagnosis related to the sample content
+tissuesSampleCollection[].tissueSampleMetadata.sampleDonor	SampleDonor|null			UNVERIFIED (inherited from GWDM 2.0) Information about the sample donor
+tissuesSampleCollection[].tissueSampleMetadata.sampleDonor.birthDate	string|string|null			UNVERIFIED (inherited from GWDM 2.0) Date of birth of the sample donor
+tissuesSampleCollection[].tissueSampleMetadata.sampleDonor.dataCategories	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Data categories related to the sample donor
+tissuesSampleCollection[].tissueSampleMetadata.sampleDonor.id	string|null			UNVERIFIED (inherited from GWDM 2.0) ID of the sample donor
+tissuesSampleCollection[].tissueSampleMetadata.sampleDonor.sex	string|null			UNVERIFIED (inherited from GWDM 2.0) Sex of the sample donor
+tissuesSampleCollection[].tissueSampleMetadata.sampleType	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Type of the tissue sample
+tissuesSampleCollection[].tissueSampleMetadata.storageTemperature	string|null			UNVERIFIED (inherited from GWDM 2.0) Storage temperature of the tissue sample
+tissuesSampleCollection[].tissueSampleMetadata.useRestrictions	CommaSeparatedValues|null			UNVERIFIED (inherited from GWDM 2.0) Restrictions on the use of the tissue sample

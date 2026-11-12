@@ -1,59 +1,169 @@
 site_name: Gateway Technical Guides
+site_description: How metadata gets into and out of the HDR UK Gateway — schemas, translation and the Gateway APIs
+site_url: https://hdruk.github.io/gateway-2-integrations-testing/
+repo_url: https://github.com/HDRUK/gateway-2-integrations-testing
+repo_name: HDRUK/gateway-2-integrations-testing
+edit_uri: edit/master/docs/
+
 theme:
-      name: material
-      #custom_dir: docs/overrides
-      palette:
-            scheme: hdruk
-      logo: images/logo.png
-      favicon: images/favicon.png
-      features:
-            - navigation.footer
-            - navigation.instant
-            - navigation.expand
-            - content.code.copy
-            - content.code.annotate
-            - toc.follow
+  name: material
+  palette:
+    scheme: hdruk
+  logo: images/logo.png
+  favicon: images/favicon.png
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - content.action.edit
+    - content.action.view
+
 extra_css:
-      - stylesheets/custom.css
+  - stylesheets/custom.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/HDRUK
+      name: HDR UK on GitHub
+    - icon: fontawesome/solid/globe
+      link: https://www.hdruk.ac.uk
+      name: HDR UK website
 
 nav:
-      - Home: index.md
-      - Using the Gateway:
-            - Login: fe-login.md
-      - Accessing Our APIs:
-            - What is a Private App: private-app-what.md
-            - Create a Private App: private-app-create.md
-            - Manage a Private App: private-app-manage.md
-      - Using our APIs:
-            - Making an authenticated request: using-our-apis/making-an-authenticated-request.md
-      - Integrations:
-            - HDR UK Datasets Integration: integrations-hdruk-datasets.md
-      - Metadata:
-            - Create: creating-metadata.md
-            - Validate: metadata-validation.md
-            - Exemplars: example-metadata.md
-      - Using the API:
-            - Datasets:
-                  - Create: creating-a-dataset.md
-                  - Retrieve: retrieving-a-dataset.md
-                  - Update: updating-a-dataset.md
-                  - Delete: deleting-a-dataset.md
-      - Using HDR UK Datasets Federation:
-            - Test Server Example: gmi-test-server.md
+  - Home: index.md
+  - Get started:
+      - get-started/index.md
+      - Which path am I on?: get-started/choose-your-path.md
+      - Key concepts: get-started/concepts.md
+      - Glossary: get-started/glossary.md
+  - Gateway APIs:
+      - api/index.md
+      - Sign in to the Gateway: api/fe-login.md
+      - Private apps:
+          - What is a private app: api/private-app-what.md
+          - Create a private app: api/private-app-create.md
+          - Manage a private app: api/private-app-manage.md
+      - Making an authenticated request: api/making-an-authenticated-request.md
+      - Datasets:
+          - Create: api/datasets/create.md
+          - Retrieve: api/datasets/retrieve.md
+          - Update: api/datasets/update.md
+          - Delete: api/datasets/delete.md
+      - Choosing your response schema: api/response-schema.md
+      - Federation (GMI):
+          - Overview: api/gmi/index.md
+          - Test server example: api/gmi/test-server.md
+  - Metadata & schemas:
+      - schemas/index.md
+      - The schema landscape: schemas/landscape.md
+      - The GWDM — what we store: schemas/gwdm.md
+      - GWDM field reference: schemas/gwdm-reference.md
+      - HDRUK schema: schemas/hdruk.md
+      - Partner & output schemas: schemas/partner-schemas.md
+      - Creating your metadata: schemas/creating-metadata.md
+      - Validating your metadata: schemas/validation.md
+      - Worked examples: schemas/examples.md
+  - Bring your own schema:
+      - byos/index.md
+      - 1. Define your schema: byos/1-define.md
+      - 2. Publish it to schemata: byos/2-publish.md
+      - 3. Write your JSONata maps: byos/3-map.md
+      - 4. Test and validate: byos/4-test.md
+      - 5. Go live: byos/5-go-live.md
+      - Worked example — schema.org / Google: byos/example-schemaorg.md
+      - Worked example — BioSchema: byos/example-bioschema.md
+  - Playbooks:
+      - playbooks/index.md
+      - Add a field to an existing schema: playbooks/add-a-field.md
+      - Change an enum: playbooks/change-an-enum.md
+      - Add a field to the GWDM: playbooks/add-a-gwdm-field.md
+      - Cut a new schema version: playbooks/new-schema-version.md
+      - Onboard a brand-new schema: playbooks/new-schema.md
+      - Write a JSONata translation map: playbooks/write-a-map.md
+      - Onboard a new partner: playbooks/new-partner.md
+  - Reference:
+      - reference/index.md
+      - TRASER API: reference/traser-api.md
+      - TRASER developer tools: reference/traser-tools.md
+      - JSONata cookbook: reference/jsonata-cookbook.md
+      - Schema version matrix: reference/version-matrix.md
+      - Translation graph: reference/translation-graph.md
+      - Error reference: reference/errors.md
+      - Architecture: reference/architecture.md
+      - Known limitations: reference/known-limitations.md
+      - Example payloads: examples/README.md
+  - Tags: tags.md
+
 plugins:
-      - search
+  - search:
+      separator: '[\s\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - tags:
+      tags_file: tags.md
+  - redirects:
+      redirect_maps:
+        creating-a-dataset.md: api/datasets/create.md
+        retrieving-a-dataset.md: api/datasets/retrieve.md
+        updating-a-dataset.md: api/datasets/update.md
+        deleting-a-dataset.md: api/datasets/delete.md
+        creating-metadata.md: schemas/creating-metadata.md
+        metadata-validation.md: schemas/validation.md
+        example-metadata.md: schemas/examples.md
+        integrations-hdruk-datasets.md: api/gmi/index.md
+        gmi-test-server.md: api/gmi/test-server.md
+        fe-login.md: api/fe-login.md
+        private-app-what.md: api/private-app-what.md
+        private-app-create.md: api/private-app-create.md
+        private-app-manage.md: api/private-app-manage.md
+        using-our-apis/making-an-authenticated-request.md: api/making-an-authenticated-request.md
 
 markdown_extensions:
-      - admonition
-      - pymdownx.details
-      - pymdownx.highlight:
-            anchor_linenums: true
-            line_spans: __span
-            pygments_lang_class: true
-      - pymdownx.inlinehilite
-      - pymdownx.snippets
-      - pymdownx.superfences
-      - pymdownx.tabbed:
-            alternate_style: true
-      - attr_list
-      - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: ["docs"]
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - def_list
+  - tables
+  - footnotes

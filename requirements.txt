@@ -1,2 +1,4 @@
-mkdocs
-mkdocs-material
+mkdocs>=1.6
+mkdocs-material>=9.5,<9.6
+mkdocs-redirects>=1.2
+pymdown-extensions>=10.9

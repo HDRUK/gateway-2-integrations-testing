@@ -1,0 +1,1084 @@
+{
+  "status_code": 200,
+  "response": {
+    "identifier": "95cd1eac-59b5-4cb2-9c08-0b8a9067c760",
+    "issued": "2024-10-08T11:32:38.745215Z",
+    "modified": "2024-10-08T11:32:38.745231Z",
+    "revisions": [
+      {
+        "url": "https://web.prod.hdruk.cloud//dataset/868?version=1.0.0",
+        "version": "1.0.0"
+      }
+    ],
+    "version": "7.0.0",
+    "summary": {
+      "abstract": "The Diagnostic Imaging Data Set (DID) collects data about diagnostic imaging tests carried out on NHS patients, extracted from local radiology information systems.",
+      "contactPoint": "user@example.com",
+      "keywords": [
+        "Scan",
+        "Radiology",
+        "Diagnostic Image",
+        "X-Ray",
+        "Plain radiography",
+        "CAT",
+        "Computerized a"
+      ],
+      "doiName": null,
+      "title": "Diagnostic Imaging Dataset",
+      "dataCustodian": {
+        "name": "NHS England Secure Data Environment (SDE)",
+        "identifier": "da31bca3-ead1-4cc3-acd9-2bc5de5e409d",
+        "contactPoint": "user@example.com",
+        "logo": null,
+        "description": null,
+        "memberOf": null
+      },
+      "populationSize": 18479800,
+      "datasetAliases": null
+    },
+    "documentation": {
+      "description": "The DID is a monthly collection of information about diagnostic imaging tests carried out on NHS patients in England which enables analysis of demographic and geographic variation in access to different test types and providers. The dataset, collected at patient level, includes patient identifiers to enable linkage to other datasets, most notably cancer registration data. Information from the DID may inform the accreditation processes for imaging departments through the UK Imaging Services Accreditation Scheme and the assessment of imaging services by the Care Quality Commission. The dataset provides information on the utilisation of high value imaging equipment such as MRI scanners. Information about diagnostic testing is being linked to cancer patient\u2019s records held in Cancer Registries, expanding the understanding we have of their treatment pathway. Further information can be found on the NHS Digital DID website. Release Date - Aggregated data at Trust level is published the last Thursday of the month by NHS England on the DID webpage iView - DID data is available to the DID user community and the DHSC via Community View in iView. This data resource has been designed for professionals working with health and social care data on a regular basis. Access to iView can be requested by contacting NHS Digital on 0300 303 5678 or user@example.com",
+      "associatedMedia": "https://www.england.nhs.uk/statistics/statistical-work-areas/diagnostic-imaging-dataset/\nhttps://did.hscic.gov.uk/",
+      "inPipeline": "Not available"
+    },
+    "coverage": {
+      "pathway": "DID data is submitted by secondary providers. It includes a number of fields indicating the patient pathway. For insurance, the Patient Source Setting field describes how a patient was referred to receive a diagnostic imaging test. Possible options are: Admitted Patient Care - Inpatient (this Health Care Provider) Admitted Patient Care - Day case (this Health Care Provider) Out-patient (this Health Care Provider) GP Direct Access Accident and Emergency Department (this Health Care Provider) Other Health Care Provider Other DID also includes fields indicating the individual and organisation that referred the patient. However, in some instances the latter is not always populated. Similarly, there are fields indicating the date a referral for diagnostic imaging was made and when it was received. As with the referring organisation, there are some instances when these are not populated.",
+      "spatial": "https://www.geonames.org/6269131/england.html",
+      "followUp": "Other",
+      "datasetCompleteness": null,
+      "typicalAgeRangeMin": 0,
+      "typicalAgeRangeMax": 120,
+      "materialType": [
+        "None/not available"
+      ]
+    },
+    "provenance": {
+      "origin": {
+        "purpose": [],
+        "source": [],
+        "collectionSource": [
+          "Other",
+          "Clinic",
+          "Secondary care - Accident and Emergency",
+          "Secondary care - In-patients",
+          "Community",
+          "Private"
+        ],
+        "datasetType": [
+          {
+            "name": "Health and disease",
+            "subTypes": []
+          }
+        ],
+        "imageContrast": "Not stated"
+      },
+      "temporal": {
+        "endDate": null,
+        "startDate": "2012-01-04",
+        "timeLag": "2-6 months",
+        "publishingFrequency": "Monthly",
+        "distributionReleaseDate": null
+      }
+    },
+    "accessibility": {
+      "usage": {
+        "resourceCreator": "NHS ENGLAND",
+        "dataUseLimitation": null,
+        "dataUseRequirements": [
+          "Institution-specific restrictions",
+          "Not for profit use",
+          "User-specific restriction"
+        ]
+      },
+      "access": {
+        "accessRights": "https://digital.nhs.uk/services/data-access-request-service-dars",
+        "jurisdiction": [
+          "GB-ENG"
+        ],
+        "accessService": "DID data are available via a range of services which can be applied for through the Data Access Request Service (DARS). Please note we will only pause the elapsed time when we require further detail or approvals from an external provider are required.",
+        "dataProcessor": "NHS England (NHSE)",
+        "dataController": "NHS England (NHSE)",
+        "deliveryLeadTime": "Other",
+        "accessRequestCost": "https://digital.nhs.uk/services/data-access-request-service-dars/data-access-request-service-dars-charges",
+        "accessServiceCategory": "Direct access"
+      },
+      "formatAndStandards": {
+        "conformsTo": [],
+        "vocabularyEncodingScheme": [
+          "OTHER",
+          "SNOMED CT"
+        ],
+        "language": [
+          "en"
+        ],
+        "format": [
+          "XML",
+          "CSV",
+          "Text"
+        ]
+      }
+    },
+    "enrichmentAndLinkage": {
+      "tools": [],
+      "investigations": [],
+      "publicationAboutDataset": null,
+      "publicationUsingDataset": null,
+      "derivedFrom": null,
+      "isPartOf": null,
+      "linkableDatasets": null,
+      "similarToDatasets": null
+    },
+    "observations": [
+      {
+        "observedNode": "Persons",
+        "measuredValue": 18479800,
+        "observationDate": "2020-09-30",
+        "measuredProperty": "Count",
+        "disambiguatingDescription": "Diagnostic imaging events relating to the 6 month period April - Sept 2020"
+      }
+    ],
+    "structuralMetadata": {
+      "tables": [
+        {
+          "name": "Modality",
+          "columns": [
+            {
+              "name": "IC_Modality_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Modality"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Modality",
+          "columns": [
+            {
+              "name": "IC_Modality_ID-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Modality ID"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Imaging Codes",
+          "columns": [
+            {
+              "name": "DID_SnomedCT_Code-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Imaging Code (SNOMED-CT)"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Imaging Codes",
+          "columns": [
+            {
+              "name": "DID_NICIP_Code-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Imaging Code (NICIP)"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Imaging Codes",
+          "columns": [
+            {
+              "name": "IC_NICIP_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Imaging Code (NICIP) Description"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Imaging Codes",
+          "columns": [
+            {
+              "name": "IC_SnomedCT_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Imaging Code (SNOMED-CT) Description"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Diagnostic Test Dates",
+          "columns": [
+            {
+              "name": "DID_Date1-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Diagnostic Test Request Date"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Diagnostic Test Dates",
+          "columns": [
+            {
+              "name": "DID_Date2-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Diagnostic Test Request Received Date"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Diagnostic Test Dates",
+          "columns": [
+            {
+              "name": "DID_Date3-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Diagnostic Test Date"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Diagnostic Test Dates",
+          "columns": [
+            {
+              "name": "DID_Date3_Year-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Year of Test"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Diagnostic Test Dates",
+          "columns": [
+            {
+              "name": "DID_Date4-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Service Report Issue Date"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Diagnostic Test Dates",
+          "columns": [
+            {
+              "name": "DID_Date3_Month-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Month of Test"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Region",
+          "columns": [
+            {
+              "name": "IC_Region_ID-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Region ID"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Region",
+          "columns": [
+            {
+              "name": "IC_Region_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Region"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Sub-System Component",
+          "columns": [
+            {
+              "name": "IC_Sub_SysComp_ID-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Sub-System Component ID"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Sub-System Component",
+          "columns": [
+            {
+              "name": "IC_Sub_SysComp_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Sub-System Component"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Sub-System",
+          "columns": [
+            {
+              "name": "IC_Sub_Sys_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Sub-System"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Sub-System",
+          "columns": [
+            {
+              "name": "IC_Sub_Sys_ID-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Sub-System ID"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Sub-Modality",
+          "columns": [
+            {
+              "name": "IC_Sub_Modality_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Sub-Modality"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Sub-Modality",
+          "columns": [
+            {
+              "name": "IC_Sub_Modality_ID-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Sub-Modality ID"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Ethnic Category",
+          "columns": [
+            {
+              "name": "DID_EthCat_Grp-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Ethnic Category Group"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Ethnic Category",
+          "columns": [
+            {
+              "name": "DID_EthCat-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Ethnic Category Code"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Ethnic Category",
+          "columns": [
+            {
+              "name": "IC_EthCat_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Ethnic Category Description"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Morphology",
+          "columns": [
+            {
+              "name": "IC_Morph_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Morphology"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Morphology",
+          "columns": [
+            {
+              "name": "IC_Morhpology_ID-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Morphology ID"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Sub-Region",
+          "columns": [
+            {
+              "name": "IC_Sub_Region_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Sub Region"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Sub-Region",
+          "columns": [
+            {
+              "name": "IC_Sub_Region_ID-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Sub Region ID"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Provider Site",
+          "columns": [
+            {
+              "name": "IC_SiteName-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Provider Site Code Description"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Provider Site",
+          "columns": [
+            {
+              "name": "IC_SiteCode-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Provider Site Code"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "System",
+          "columns": [
+            {
+              "name": "IC_System_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "System"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "System",
+          "columns": [
+            {
+              "name": "IC_System_ID-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "System ID"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Location",
+          "columns": [
+            {
+              "name": "IC_MSOA-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Location - MSOA"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Location",
+          "columns": [
+            {
+              "name": "IC_LSOA-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Location - LSOA"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Commissioning Organisation",
+          "columns": [
+            {
+              "name": "IC_PCTCode-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Commissioning Organisation Code"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Commissioning Organisation",
+          "columns": [
+            {
+              "name": "IC_PCTName-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Commissioning Organisation Name"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Referrer Organisation",
+          "columns": [
+            {
+              "name": "IC_Refer_OrgName-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Referring Organisation Description"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Referrer Organisation",
+          "columns": [
+            {
+              "name": "DID_Refer_OrgCode-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Referrer Organisation"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "NHS Number",
+          "columns": [
+            {
+              "name": "DID_NHSnum_Stat-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "NHS Number Status"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "NHS Number",
+          "columns": [
+            {
+              "name": "IC_NHSnum_Supp-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "NHS Number Supplied"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "NHS Number",
+          "columns": [
+            {
+              "name": "IC_NHSnum_Stat_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "NHS Number Status Description"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "General",
+          "columns": [
+            {
+              "name": "SubmissionDataID-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "SubmissionDataID"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Patient Source Setting",
+          "columns": [
+            {
+              "name": "DID_PatSource_Code-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Patient Source Setting"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Patient Source Setting",
+          "columns": [
+            {
+              "name": "IC_PatSource_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Patient Source Setting Description"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "GP",
+          "columns": [
+            {
+              "name": "IC_RegGP_PracName-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "GP Description"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "GP",
+          "columns": [
+            {
+              "name": "DID_RegGP_PracCode-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "GP Code"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "CCG",
+          "columns": [
+            {
+              "name": "IC_CCGName-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "CCG Name"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "CCG",
+          "columns": [
+            {
+              "name": "IC_CCGCode-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "CCG Code"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Test Request",
+          "columns": [
+            {
+              "name": "IC_Date3_to_Date4-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Test to Service (Test) Report Issue"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Test Request",
+          "columns": [
+            {
+              "name": "IC_Date1_to_date2-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Test Request to Test Request Received"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Test Request",
+          "columns": [
+            {
+              "name": "IC_Date2_to_Date3-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Test Request Received to Test"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Test Request",
+          "columns": [
+            {
+              "name": "IC_Date1_to_Date4-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Test Request to Service (Test) Report Issue"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Test Request",
+          "columns": [
+            {
+              "name": "IC_Date1_to_date3-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Test Request to Test"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Test Request",
+          "columns": [
+            {
+              "name": "IC_Date2_to_Date4-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Test Request Received to Service (test) Report Issue"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Cancer Diagnosis",
+          "columns": [
+            {
+              "name": "IC_Sub_Cancer_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Sub Early cancer diagnosis"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Cancer Diagnosis",
+          "columns": [
+            {
+              "name": "IC_Cancer_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Early cancer diagnosis"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Fetal",
+          "columns": [
+            {
+              "name": "IC_Fetal_ID-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Fetal ID"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Fetal",
+          "columns": [
+            {
+              "name": "IC_Fetal_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Fetal"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Provider SHA",
+          "columns": [
+            {
+              "name": "IC_Prov_SHACode-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Provider SHA Code"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Provider SHA",
+          "columns": [
+            {
+              "name": "IC_Prov_SHAName-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Provider SHA Name"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Provider",
+          "columns": [
+            {
+              "name": "IC_ProvName-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Provider Name"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Provider",
+          "columns": [
+            {
+              "name": "IC_Prov_OrgCode-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Provider Code"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Organisation",
+          "columns": [
+            {
+              "name": "IC_Submit_OrgCode-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Organisation Code"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Organisation",
+          "columns": [
+            {
+              "name": "IC_Submit_OrgName-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Organisation Name"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Referrer type",
+          "columns": [
+            {
+              "name": "IC_RefType_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Referrer type"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Gender",
+          "columns": [
+            {
+              "name": "IC_Gender_Desc-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Gender Description"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Gender",
+          "columns": [
+            {
+              "name": "DID_Gender_Code-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Gender Code"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Age",
+          "columns": [
+            {
+              "name": "IC_Age10-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Age Band 10 years"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Age",
+          "columns": [
+            {
+              "name": "IC_Age17_64-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Age band inc. working age 16 to 64"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Age",
+          "columns": [
+            {
+              "name": "IC_AgeChild-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Age band children inc. 0 years"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Age",
+          "columns": [
+            {
+              "name": "IC_Age50_74-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Age band inc. 50-74"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Age",
+          "columns": [
+            {
+              "name": "IC_Age5-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Age Band 5 years"
+            }
+          ],
+          "description": null
+        },
+        {
+          "name": "Age",
+          "columns": [
+            {
+              "name": "IC_Age17_60-Diagnostic Imaging Dataset",
+              "values": null,
+              "dataType": "String",
+              "sensitive": false,
+              "description": "Age band inc. working age 16 to 60"
+            }
+          ],
+          "description": null
+        }
+      ],
+      "syntheticDataWebLink": []
+    },
+    "demographicFrequency": null,
+    "omics": null
+  }
+}

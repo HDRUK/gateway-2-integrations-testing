@@ -1,0 +1,41 @@
+{
+  "status_code": 200,
+  "response": {
+    "@context": "https://schema.org/",
+    "@id": "https://hdruk.ac.uk",
+    "@type": "Dataset",
+    "identifier": "",
+    "version": "GDMv1",
+    "url": "https://hdruk.ac.uk/868",
+    "name": "Diagnostic Imaging Dataset",
+    "alternateName": "Diagnostic Imaging Dataset",
+    "description": "The DID is a monthly collection of information about diagnostic imaging tests carried out on NHS patients in England which enables analysis of demographic and geographic variation in access to different test types and providers. The dataset, collected at patient level, includes patient identifiers to enable linkage to other datasets, most notably cancer registration data. Information from the DID may inform the accreditation processes for imaging departments through the UK Imaging Services Accreditation Scheme and the assessment of imaging services by the Care Quality Commission. The dataset provides information on the utilisation of high value imaging equipment such as MRI scanners. Information about diagnostic testing is being linked to cancer patient\u2019s records held in Cancer Registries, expanding the understanding we have of their treatment pathway. Further information can be found on the NHS Digital DID website. Release Date - Aggregated data at Trust level is published the last Thursday of the month by NHS England on the DID webpage iView - DID data is available to the DID user community and the DHSC via Community View in iView. This data resource has been designed for professionals working with health and social care data on a regular basis. Access to iView can be requested by contacting NHS Digital on 0300 303 5678 or user@example.com",
+    "citation": "",
+    "creator": {
+      "@type": "Organization",
+      "legalName": "NHS ENGLAND",
+      "name": "NHS ENGLAND",
+      "email": "user@example.com",
+      "description": "",
+      "identifier": "",
+      "sameAs": null
+    },
+    "isAccessibleForFree": false,
+    "distribution": {
+      "@type": "DataDownload",
+      "name": "DID data are available via a range of services which can be applied for through the Data Access Request Service (DARS). Please note we will only pause the elapsed time when we require further detail or approvals from an external provider are required.",
+      "contentUrl": "https://somehwere.com",
+      "encodingFormat": "Unknown"
+    },
+    "keywords": "Scan;,;Radiology;,;Diagnostic Image;,;X-Ray;,;Plain radiography;,;CAT;,;Computerized a",
+    "license": "https://digital.nhs.uk/services/data-access-request-service-dars",
+    "temporalCoverage": null,
+    "funder": null,
+    "isPartOf": null,
+    "hasPart": null,
+    "measurementTechnique": "",
+    "sameAs": null,
+    "spatialCoverage": "",
+    "variableMeasured": ""
+  }
+}
